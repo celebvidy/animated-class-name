@@ -109,8 +109,8 @@ function switchClassName(component, oldClassName, className) {
       var oldClasses = element.className; //preserve classes added by React internally
       element.className = oldClasses.replace(oldClassName, className); //switch classes without re-rendering
     } catch (e) {
-      if (process.env.NODE_ENV === 'development') {
-        console.warn('AnimatedClassName had the following issue: ' + e.toString());
+      if (process.env.NODE_ENV !== 'production') {
+        console.warn('AnimatedClassName had the following issue switching classes: ' + e.toString());
       }
     }
   }, 1);
