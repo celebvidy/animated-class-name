@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export default  class AnimatedClassName extends Component {
+export default  class AnimatedClassName extends React.Component {
   componentDidMount() {
     let {startClassName, className, onComplete, timeout} = this.props;
 

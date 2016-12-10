@@ -22,8 +22,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var AnimatedClassName = function (_Component) {
-  _inherits(AnimatedClassName, _Component);
+var AnimatedClassName = function (_React$Component) {
+  _inherits(AnimatedClassName, _React$Component);
 
   function AnimatedClassName() {
     _classCallCheck(this, AnimatedClassName);
@@ -88,7 +88,7 @@ var AnimatedClassName = function (_Component) {
   }]);
 
   return AnimatedClassName;
-}(Component);
+}(_react2.default.Component);
 
 exports.default = AnimatedClassName;
 
