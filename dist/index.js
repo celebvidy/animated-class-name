@@ -12,6 +12,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactDom = require('react-dom');
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -101,7 +105,7 @@ function switchClassName(component, oldClassName, className) {
 
   setTimeoutAnimationFrame(function () {
     try {
-      var element = ReactDOM.findDOMNode(component);
+      var element = _reactDom2.default.findDOMNode(component);
       var oldClasses = element.className; //preserve classes added by React internally
       element.className = oldClasses.replace(oldClassName, className); //switch classes without re-rendering
     } catch (e) {
